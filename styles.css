@@ -2,20 +2,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Poppins';
     color: #0f172a;
-    font-size: 1.05rem;
-}
-
-.google-header {
-    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem 2rem;
     gap: 1rem;
 }
 
@@ -61,13 +57,23 @@ button:hover {
     background-color: rgb(228, 228, 228);
 }
 
+.fa-flask, .fa-braile {
+    font-size: 1.2rem;
+}
+
 .img-button {
-    border: none;
     background: transparent;
+    border-radius: 100%;
+    border-width: 3px;
+    border-color: #34A853;
+    display: grid;
+    place-items: center;
+    padding: 2px;
+
 }
 
 .img-button img {
-    width: 30px;
+    width: 25px;
     aspect-ratio: 1/1;
     overflow: hidden;
     border-radius: 100%;
@@ -81,10 +87,14 @@ main {
     align-items: center;
     gap: 2rem;
     padding: 1rem;
+    padding-bottom: 12rem;
 }
 
 .title-text {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
+    font-family: "Outfit";
+    font-weight: 500;
+    user-select: none;
 }
 
 .search-bar {
@@ -101,15 +111,11 @@ main {
     width: 100%;
     max-width: 600px;
     border: 1px solid rgb(228, 228, 228);
+    box-shadow: 0 0 6px 1px rgb(236, 236, 236);
     padding: 1rem;
     border-radius: 2rem;
     transition: 0.3s;
 
-}
-
-.input-bar:hover,
-.input-bar:focus-within {
-    box-shadow: 0 0 6px 1px rgb(236, 236, 236);
 }
 
 .input-bar .mic-cam {
@@ -140,9 +146,48 @@ main {
     padding: 0.5rem 1rem;
     background-color: rgb(245, 245, 245);
     border-radius: 0.25rem;
-    transition: 0.3s;
+    transition: 0.05s;
 }
 
 .button-grid button:hover {
-    box-shadow: 0 0 3px 1px rgb(204, 204, 204);
+    box-shadow: 0 0 2px 1px rgb(204, 204, 204);
+}
+
+.language-text,
+.language-link {
+    font-size: 0.9rem;
+}
+
+.language-link {
+    color: blue;
+    cursor: pointer;
+}
+
+.language-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+    background-color: #F2F2F2;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.group-contents {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (min-width: 640px) {
+
 }
